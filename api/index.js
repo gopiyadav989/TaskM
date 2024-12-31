@@ -13,10 +13,6 @@ const PORT = process.env.PORT || 4002;
 
 const app = express();
 
-app.use(cors({
-    origin: ["http://localhost:3000", "http://localhost:3001"],
-    credentials: true,
-}));
 
 const __dirname = path.resolve();
 
