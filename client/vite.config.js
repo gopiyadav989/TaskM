@@ -11,10 +11,10 @@ export default defineConfig({
     },
   },
   server: {
-    port: 3000,
+    port: 3000, // Frontend runs on port 3000
     proxy: {
       "/api": {
-        target: "http://localhost:8800",
+        target: "http://localhost:4002", 
         changeOrigin: true,
       },
     },
