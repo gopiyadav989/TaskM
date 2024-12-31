@@ -27,7 +27,8 @@ export function dateFormatter(dateString) {
 export const getInitials = (fullName) =>
   fullName
     ?.split(" ")
-    .map((name) => name[0].toUpperCase())
+    .filter((name) => name) // Remove empty strings
+    .map((name) => name[0]?.toUpperCase() || "") // Handle undefined
     .join("");
 
 export const PRIOTITYSTYELS = {
