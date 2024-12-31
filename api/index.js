@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 4002;
 
 const app = express();
 
-
+app.use(cors());
 const __dirname = path.resolve();
 
 
