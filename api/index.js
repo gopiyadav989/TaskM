@@ -18,6 +18,11 @@ app.use(cors({
     credentials: true,
 }));
 
+app.use(cors({
+    origin: ["http://localhost:3000", "http://localhost:4002", ],
+    credentials: true,
+}));
+
 const __dirname = path.resolve();
 
 
