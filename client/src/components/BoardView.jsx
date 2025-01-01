@@ -224,7 +224,7 @@ const BoardView = ({ tasks }) => {
                         <div key={activity._id} className="flex items-start gap-2 text-sm">
                           <Clock className="h-4 w-4 mt-0.5 text-muted-foreground" />
                           <div>
-                            <span className="font-medium">{activity.by.name}</span>
+                            <span className="font-medium">{activity?.by?.name}</span>
                             <span className="text-muted-foreground"> {activity.activity}</span>
                             <p className="text-xs text-muted-foreground">
                               {formatDate(activity.date)}

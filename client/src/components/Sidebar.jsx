@@ -68,7 +68,7 @@ export default function Sidebar() {
       </ScrollArea>
       <div className="p-4">
         <Button variant="ghost" className="w-full justify-start" asChild>
-          <Link to="/settings">
+          <Link>
             <Settings className="mr-2 h-4 w-4" />
             Settings
           </Link>
